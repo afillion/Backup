@@ -1,0 +1,185 @@
+body {
+	padding: 0px;
+	margin: 0 6em 0 6em;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+/* HEADER */
+
+div.header {
+	width: 100%;
+	margin:auto;
+	max-height: 10em;
+	border-bottom: 5px double black;
+}
+
+h1#logo {
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
+	text-align: center;
+	line-height: 2em;
+	font-weight:lighter;
+}
+
+#logo>a {
+	color:black;
+	text-decoration:none;
+}
+
+	/* auth */
+
+ul#id {
+	list-style: none;
+	position: absolute;
+	top: 6em;
+	right: 7em;
+	font-size:13px;
+}
+
+ul#id > li:hover {
+	background-color: #6495ED;
+}
+
+ul#id > li {
+	display: block;
+	padding: 6px 14px;
+	width:8em;
+	background-color: #87CEFA;
+	border: solid 2px white;
+	text-align:center;
+}
+
+ul#id > li > a {
+	text-decoration: none;
+	color: white;
+}
+
+	/* nav */
+
+ul#menu {
+	width: 80%;
+	margin : 1em auto 1em auto;
+	padding-left : 0;
+	margin-bottom:1px solid black;
+}
+
+ul#menu > li:hover, ul#menu > li.active_page {
+	border-bottom:2px solid black;
+}
+
+ul#menu > li{
+	display:inline-block;
+	text-align:center;
+	width:19%;
+	padding-bottom:15px;
+}
+
+ul#menu > li > a {
+	text-decoration:none;
+	color:black;
+}
+
+	/* account manager */
+
+li:hover > ul#account {
+	display:block;
+}
+
+ul#account {
+	padding-left: 0px;
+	list-style:none;
+	display:none;
+}
+
+ul#account > li {
+	width: 8em;
+	color: white;
+	margin-top:5px;
+}
+
+ul#account > li > a {
+	text-decoration : none;
+	color:white;
+}
+
+#account {
+	color :white;
+}
+
+/* MAIN */
+
+.main {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* articles */
+
+article.article {
+	display : table-cell;
+	vertical-align: middle;
+	padding : 10px 1em;
+	width : 30%;
+	margin : 0 1em;
+	text-align:center;
+	position:relative;
+	border: 5px outset;
+}
+
+.article > img {
+	max-width:300px;
+	min-height:200px;
+}
+
+p.genre, p.cat {
+	text-align: left;
+	display:table-cell;
+	width : 50%;
+	padding:2em;
+	font-size: smaller;
+	color: darkgray;
+}
+
+p.desc {
+	min-width:33%;
+}
+
+.article > p.price {
+	position:absolute;
+	font-size: 3em;
+	bottom: 0;
+	right : 1em;
+}
+
+.catalogue > div#art_row {
+	display: table-row;
+}
+
+div.catalogue {
+	display: table;
+}
+
+a.valid {
+	text-decoration: none;
+	color: white;
+	text-align: right;
+	background-color: violet;
+	padding: 30;
+	border: outset;
+	float: right;
+}
+
+.total {
+	text-align:right;
+	font-size:3em;
+}
+
+.totals {
+	text-align:right;
+	font-size:1.5em;
+}
+
+.cart_article {
+	display:table-row;
+}
